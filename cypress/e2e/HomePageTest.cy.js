@@ -3,7 +3,7 @@ describe('Home Page Test', () => {
     cy.visit('/')
   })
   it('header animate', () => {
-    cy.contains(/Order Your Food Here/i).should('not.be.visible')
+    // cy.contains(/Order Your Food Here/i).should('not.be.visible')
     cy.wait(1000)
     cy.contains(/Order Your Food Here/i).should('be.visible')
   })

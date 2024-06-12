@@ -38,11 +38,30 @@ export default {
       },
       animation:{
         fadein: 'fade-in 3s ease-in-out ',
-      }          
+      },
+      spacing:{
+        '3/5':'60%',
+      }, 
+      borderRadius:{
+        '1/2':'50%',
+      },         
     },
   },
 
-  plugins: [],
+  plugins: [
+    function({addUtilities}){
+      const newUtilities ={
+        ".no-scrollbar::-webkit-scrollbar":{
+          display:"none",
+        },
+        ".no-scrollbar":{
+          "-ms-overflow-style":"none",
+          "scrollbar-width":"none",
+        },
+      }
+      addUtilities(newUtilities)
+    }
+  ],
 }
 
 

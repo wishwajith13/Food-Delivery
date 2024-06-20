@@ -13,7 +13,6 @@ const StoreContextProvider = (props)=>{
             {props.children}
         </StoreContext.Provider>
     )
-
 }
 
 export default StoreContextProvider

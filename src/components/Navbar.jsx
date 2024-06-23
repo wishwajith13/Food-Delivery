@@ -5,10 +5,10 @@ import Button from "./Button"
 const Navbar =()=>{
 
     const [menu,setMenu]=useState("Home")
-    const menuDesign = "pb-0.5 border-b-2 border-sky-950 cursor-grab "
+    const menuDesign = "pb-0.5 border-b-2 border-sky-950 cursor-grab"
 
     return(
-    <div className="pt-5 pr-0 flex justify-between items-center ">
+    <div className="pt-6 pr-0 flex justify-between items-center ">
         <img src={assets.logo} alt="" className="w-40" />
             <ul className="flex list-none gap-10 font-outfit text-lg text-sky-950">
                 <li onClick={()=>setMenu("Home")} className={menu==="Home"?menuDesign:"cursor-grab"}>Home</li>

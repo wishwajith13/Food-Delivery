@@ -37,14 +37,21 @@ export default {
         },
       },
       animation:{
-        fadein: 'fade-in 3s ease-in-out ',
+        fadein3: 'fade-in 3s ease-in-out ',
+        fadein1: 'fade-in 1s ease-in-out ',
       },
       spacing:{
         '3/5':'60%',
       }, 
       borderRadius:{
         '1/2':'50%',
-      },         
+      },
+      boxShadow: {
+        '3xl': '0px 0px 10px rgba(0, 0, 0, 0.3)',
+      }, 
+      gridTemplateColumns: {
+        'sp': 'repeat(auto-fill, minmax(240px, 1fr))',
+      }        
     },
   },
 

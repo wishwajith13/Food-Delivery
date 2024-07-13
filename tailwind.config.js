@@ -51,7 +51,10 @@ export default {
       }, 
       gridTemplateColumns: {
         'sp': 'repeat(auto-fill, minmax(240px, 1fr))',
-      }        
+      }, 
+      screens:{
+        'vsm':'320px',
+      }       
     },
   },
 

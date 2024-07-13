@@ -9,14 +9,14 @@ const Navbar =()=>{
 
     return(
     <div className="pt-6 pr-0 flex justify-between items-center ">
-        <img src={assets.logo} alt="" className="w-40" />
-            <ul className="flex list-none gap-10 font-outfit text-lg text-sky-950">
+        <img src={assets.logo} alt="" className="w-40 md:max-lg:w-28 lg:max-xl:w-36 vsm:max-md:w-20" />
+            <ul className="flex list-none gap-10 font-outfit text-lg text-sky-950 md:max-lg:gap-3 md:max-lg:text-sm lg:max-xl:gap-6 vsm:max-md:hidden">
                 <li onClick={()=>setMenu("Home")} className={menu==="Home"?menuDesign:"cursor-grab"}>Home</li>
                 <li onClick={()=>setMenu("Menu")} className={menu==="Menu"?menuDesign:"cursor-grab"}>Menu</li>
                 <li onClick={()=>setMenu("Mobile-App")} className={menu==="Mobile-App"?menuDesign:"cursor-grab"}>Mobile-App</li>
                 <li onClick={()=>setMenu("Contact US")} className={menu==="Contact US"?menuDesign:"cursor-grab"}>Contact US</li>
             </ul>
-            <div className="flex items-center gap-10 ">
+            <div className="flex items-center gap-10 md:max-lg:gap-4">
                 <img src={assets.search_icon} alt="search_icon" />
                 <div className="relative">
                     <img src={assets.basket_icon} alt="basket_icon" />

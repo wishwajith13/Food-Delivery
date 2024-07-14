@@ -16,13 +16,13 @@ const Navbar =()=>{
                 <li onClick={()=>setMenu("Mobile-App")} className={menu==="Mobile-App"?menuDesign:"cursor-grab"}>Mobile-App</li>
                 <li onClick={()=>setMenu("Contact US")} className={menu==="Contact US"?menuDesign:"cursor-grab"}>Contact US</li>
             </ul>
-            <div className="flex items-center gap-10 md:max-lg:gap-4">
-                <img src={assets.search_icon} alt="search_icon" />
-                <div className="relative">
+             <div className="flex items-center gap-10 md:max-lg:gap-4 vsm:max-sm:gap-4">
+                <img src={assets.search_icon} alt="search_icon" className="vsm:max-sm:hidden"/>
+                <div className="relative vsm:max-sm:w-5">
                     <img src={assets.basket_icon} alt="basket_icon" />
                     <div className="absolute min-w-3 min-h-3 bg-orange-600 rounded-md bottom-6 left-6"></div>                    
                 </div>
-                <Button value="Sign In" buttonOutline={"border-2 border-orange-500 font-outfit"} />
+                <Button value="Sign In" buttonOutline={"border-2 border-orange-500 font-outfit vsm:max-sm:text-xs vsm:max-sm:h-8"} />
             </div>
     </div>
     )

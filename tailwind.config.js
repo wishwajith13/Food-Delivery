@@ -16,7 +16,7 @@ export default {
         playfair:['Playfair'] 
       },
       height:{
-        100:"40rem"        
+        100:"33rem"        
       }, 
       maxWidth: {
         '1/4': '25%',

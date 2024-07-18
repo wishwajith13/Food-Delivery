@@ -3,8 +3,8 @@ import { assets } from '../assets/assets'
 
 const Footer = () => {
   return (
-    <div className='text-slate-400 bg-zinc-700 flex flex-col items-center gap-5 px-32 pb-5 pt-20 mt-24' id='footer'>
-        <div className='w-full grid grid-cols-3 gap-20'>
+    <div className='text-slate-400 bg-zinc-700 flex flex-col items-center gap-5 px-20 vsm:max-md:px-8 pb-5 pt-20 mt-24' id='footer'>
+        <div className='w-full grid grid-cols-3 gap-20 vsm:max-md:grid-cols-1'>
             <div className='flex flex-col items-start gap-5'>
                 <img src={assets.logo} alt=""/>
                 <p>Modern education empowers students, encouraging creativity, critical thinking, and collaboration, shaping tomorrow's global leaders.Preserving traditions enriches communities, fostering unity and understanding, bridging past and present for future generations.</p>
@@ -14,7 +14,7 @@ const Footer = () => {
                     <img src={assets.linkedin_icon} alt='Linkedin'/>
                 </div>
             </div>
-            <div className='flex flex-col items-start pl-40'>
+            <div className='flex flex-col items-start'>
                 <h2 className='text-white text-2xl font-bold pb-5'>COMPANY</h2>
                 <ul>
                     <li className='mb-3'>Home</li>
@@ -23,7 +23,7 @@ const Footer = () => {
                     <li className='mb-3'>Privacy Policy</li>
                 </ul>
             </div>
-            <div className='flex flex-col items-start gap-5 pl-48'>
+            <div className='flex flex-col items-start gap-5'>
                 <h2 className='text-white text-2xl font-bold pb-1'>GET IN TOUCH</h2>
                 <ul>
                     <li className='mb-3'>+94-7111-21885</li>

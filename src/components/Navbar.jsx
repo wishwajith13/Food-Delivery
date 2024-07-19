@@ -23,7 +23,7 @@ const Navbar =({setShowLogin})=>{
                     <img src={assets.basket_icon} alt="basket_icon" />
                     <div className="absolute min-w-3 min-h-3 bg-orange-600 rounded-md bottom-6 left-6"></div>                    
                 </div>
-                <Button setShowLogin={setShowLogin} value="Sign In" buttonOutline={"border-2 border-orange-500 font-outfit vsm:max-sm:text-xs vsm:max-sm:h-"} />
+                <Button setShowLogin={setShowLogin} value="Sign In" buttonOutline={"border-2 border-orange-500 font-outfit vsm:max-sm:text-xs"} />
             </div>
     </div>
     )

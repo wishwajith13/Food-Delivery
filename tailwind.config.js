@@ -39,6 +39,7 @@ export default {
       animation:{
         fadein3: 'fade-in 3s ease-in-out ',
         fadein1: 'fade-in 1s ease-in-out ',
+        fadein: 'fade-in 0.5s ease-in-out ',
       },
       spacing:{
         '3/5':'60%',
@@ -54,7 +55,13 @@ export default {
       }, 
       screens:{
         'vsm':'320px',
-      }       
+      },
+      zIndex: {
+        '1': '1',
+      },
+      colors: {
+        'gr': '#00000090',
+      },       
     },
   },
 

@@ -20,7 +20,7 @@ describe('Home Page Test', () => {
   it('remove and add cart check',()=>{
     cy.getDataTest('cart-check').click({ multiple: true })
   })
-  it.only('test sign in button',()=>{
+  it('test sign in button',()=>{
     cy.getDataTest('click-signIn-button').click() 
     cy.contains(/Log In/i).should('be.visible') 
 

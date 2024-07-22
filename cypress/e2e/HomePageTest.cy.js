@@ -20,4 +20,17 @@ describe('Home Page Test', () => {
   it('remove and add cart check',()=>{
     cy.getDataTest('cart-check').click({ multiple: true })
   })
+  it.only('test sign in button',()=>{
+    cy.getDataTest('click-signIn-button').click() 
+    cy.contains(/Log In/i).should('be.visible') 
+
+    //Enter data in happy mood
+    cy.getDataTest('email').type('wishwams13@gmail.com')
+    cy.getDataTest('password').type('wfdjsjskc23$%')
+    cy.getDataTest('checkbox').click()
+    // cy.getDataTest('click-logIn-button').click({ force: true })
+    cy.getDataTest('click-hear').click()
+    cy.getDataTest('text').type('wishwajith Samaranayaka')
+    cy.getDataTest('click-cross').click()
+  })
 })

@@ -1,6 +1,7 @@
 {
   "name": "food-delivery",
   "private": true,
+  "homepage":"https://wishwajith13.github.io/Food-Delivery/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

@@ -5,16 +5,8 @@ import PlaceOrder from "../pages/PlaceOrder/PlaceOrder"
 
 const routePanel=createBrowserRouter([
     {
-        path:"/cart",
-        element:<Cart/>
-    },
-    {
         path:"/",
         element:<Home/>
-    },
-    {
-        path:"/order",
-        element:<PlaceOrder/>
     },
 ])
 

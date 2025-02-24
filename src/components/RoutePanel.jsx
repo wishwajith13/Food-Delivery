@@ -1,4 +1,4 @@
-import { createBrowserRouter,HashRouter,RouterProvider } from "react-router-dom"
+import { createBrowserRouter,RouterProvider } from "react-router-dom"
 import Cart from "../pages/Cart/Cart"
 import Home from "../pages/Home/Home"
 import PlaceOrder from "../pages/PlaceOrder/PlaceOrder"
@@ -21,9 +21,7 @@ const routePanel=createBrowserRouter([
 const RoutePanel =()=>{
     return(
         <div>
-            <HashRouter>
-                <RouterProvider router={routePanel}/>
-            </HashRouter>
+           <RouterProvider router={routePanel}/>
         </div>
     )
 }
